@@ -69,3 +69,5 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 getData("Ibrahim-AbuFarha");
+
+

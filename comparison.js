@@ -21,22 +21,15 @@ const getData = async (user, container) => {
     <span>Repositories: ${userInfo.public_repos}</span>
     <span>Followers: ${userInfo.followers}</span>
     `;
-    
     container.innerHTML = "";
-    
-
     container.innerHTML = elementUserInfo;
-   
-
-    
-    
-
     return { length: userInfo.public_repos, followers: userInfo.followers };
   } catch (err) {
     alert(err);
     window.location.reload();
   }
 };
+
 
 btn1.addEventListener("click", async (e) => {
   e.preventDefault();
